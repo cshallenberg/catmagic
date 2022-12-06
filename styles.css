@@ -1,0 +1,57 @@
+ .green {
+    color:greenyellow;
+    font-size: 50px;
+}
+
+#big {
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+    background-image: url(media/cat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#catposition {
+  background-color: blue;
+  width:400px;
+  margin: auto;
+  opacity: 0.5;
+  transition-property: all;
+  transition-duration: 4s;
+  animation-name: bounce;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+#catposition:hover {
+    opacity: 1.0;
+    transition-property: all;
+    transition-duration: 4s;
+}
+
+#textblock {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#textblock:hover {
+    background-color: crimson;
+}
+
+#center {
+    margin: auto;
+    max-width:700px;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 800px;
+    }
+}
